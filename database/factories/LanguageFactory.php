@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Language_Student;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,8 @@ class LanguageFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'id'=>Language_Student::factory()->create()->id,
+            'name'=>$this->faker->languageCode(),
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,11 @@ class ExperienceFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id'=>User::factory()->create(),
+            'name'=>$this->faker->company(),
+            'position'=>$this->faker->jobTitle(),
+            'description'=>$this->faker->text(),
+            'start_date'=>$this->faker->date(),
         ];
     }
 }

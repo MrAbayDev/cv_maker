@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('social_networks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('social_network_students_id')->constrained('social_network_students')
-                ->cascadeOnUpdate()->cascadeOnDelete();
+//            $table->foreignId('social_network_students_id')->constrained('social_network_students')
+//                ->cascadeOnUpdate()->cascadeOnDelete();
+
             $table->string('name');
             $table->string('url');
             $table->timestamps();

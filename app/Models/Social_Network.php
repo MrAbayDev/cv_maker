@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Social_Network extends Model
 {
-    /** @use HasFactory<\Database\Factories\SocialNetworkFactory> */
+    /** @use HasFactory<\Database\Factories\Social_NetworkFactory> */
     use HasFactory;
 }
