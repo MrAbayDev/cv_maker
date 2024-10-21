@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('social_networks', function (Blueprint $table) {
+        Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('social_network_students_id')->constrained('social_network_students')
-                ->cascadeOnUpdate()->cascadeOnDelete();
-
+            $table->morphs('tokenable');
             $table->string('name');
-            $table->string('url');
+            $table->string('token', 64)->unique();
+            $table->text('abilities')->nullable();
+            $table->timestamp('last_used_at')->nullable();
+            $table->timestamp('expires_at')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('social__networks');
+        Schema::dropIfExists('personal_access_tokens');
     }
 };

@@ -18,7 +18,7 @@ class Social_NetworkFactory extends Factory
     public function definition(): array
     {
         return [
-            'social_network_students_id' => Social_Network_Student::factory(),
+            'social_network_students_id' => Social_Network_Student::factory()->create(),
             'name' => $this->faker->name(),
             'url' => $this->faker->url(),
         ];
