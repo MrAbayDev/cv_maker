@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Social_Network_Student;
+use App\Models\SocialNetworkStudent;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Social_Network>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\SocialNetwork>
  */
-class Social_NetworkFactory extends Factory
+class SocialNetworkFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class Social_NetworkFactory extends Factory
     public function definition(): array
     {
         return [
-            'social_network_students_id' => Social_Network_Student::factory()->create(),
+            'social_network_students_id' => SocialNetworkStudent::factory()->create(),
             'name' => $this->faker->name(),
             'url' => $this->faker->url(),
         ];

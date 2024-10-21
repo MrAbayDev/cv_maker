@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Language_Student;
+use App\Models\LanguageStudent;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -19,12 +19,12 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             EducationSeeder::class,
             ExperienceSeeder::class,
-//            SocialNetworkSeeder::class,
-//            SocialNetworkStudentSeeder::class,
-//            SkillSeeder::class,
-//            SkillStudentSeeder::class,
-//            LanguageSeeder::class,
-//            Language_Student::class,
+            SocialNetworkSeeder::class,
+            SocialNetworkStudentSeeder::class,
+            SkillStudentSeeder::class,
+            SkillSeeder::class,
+            LanguageSeeder::class,
+            LanguageStudentSeeder::class,
         ]);
     }
 }

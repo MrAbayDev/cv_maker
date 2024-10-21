@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Language_Student;
+use App\Models\Language;
+use App\Models\LanguageStudent;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +14,6 @@ class LanguageStudentSeeder extends Seeder
      */
     public function run(): void
     {
-        Language_Student::factory(5)->create();
+        Language::factory();
     }
 }

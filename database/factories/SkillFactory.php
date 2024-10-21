@@ -20,7 +20,6 @@ class SkillFactory extends Factory
         return [
             'skill_id' => Skill::factory(),
             'name' => $this->faker->name(),
-
         ];
     }
 }

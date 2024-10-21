@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Social_Network;
+use App\Models\SocialNetwork;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +13,6 @@ class SocialNetworkSeeder extends Seeder
      */
     public function run(): void
     {
-        Social_Network::factory(5)->create();
+        SocialNetwork::factory(5)->create();
     }
 }

@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Social_Network_Student extends Model
+class SocialNetworkStudent extends Model
 {
-    /** @use HasFactory<\Database\Factories\Social_Network_StudentFactory> */
+    /** @use HasFactory<\Database\Factories\SocialNetworkStudentFactory> */
     use HasFactory;
 }

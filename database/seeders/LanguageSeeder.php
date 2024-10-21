@@ -13,6 +13,6 @@ class LanguageSeeder extends Seeder
      */
     public function run(): void
     {
-        Language::factory(5)->create([]);
+        Language::factory(5)->create(['English','Russian','Uzbek','Ukrainian']);
     }
 }
