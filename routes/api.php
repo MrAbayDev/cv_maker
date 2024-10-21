@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\EducationController;
+use App\Http\Controllers\API\ProjectController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -9,3 +11,5 @@ Route::get('/user', function (Request $request) {
 });
 //    ->middleware('auth:sanctum');
 Route::resource('/users', UserController::class);
+Route::resource('/projects', ProjectController::class);
+Route::resource('/educations', EducationController::class);

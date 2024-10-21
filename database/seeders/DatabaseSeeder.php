@@ -19,12 +19,12 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             EducationSeeder::class,
             ExperienceSeeder::class,
-            SocialNetworkSeeder::class,
-            SocialNetworkStudentSeeder::class,
-            SkillSeeder::class,
-            SkillStudentSeeder::class,
-            LanguageSeeder::class,
-            Language_Student::class,
+//            SocialNetworkSeeder::class,
+//            SocialNetworkStudentSeeder::class,
+//            SkillSeeder::class,
+//            SkillStudentSeeder::class,
+//            LanguageSeeder::class,
+//            Language_Student::class,
         ]);
     }
 }
