@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use App\Models\Language;
-use App\Models\LanguageStudent;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
