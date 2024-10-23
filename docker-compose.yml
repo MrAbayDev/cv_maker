@@ -3,7 +3,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        container_name: laravel_app
+        container_name: cv_laravel_app
         restart: unless-stopped
         volumes:
             - .:/var/www
@@ -53,7 +53,6 @@ services:
             - app  # Ensure PHP-FPM is started before Nginx
         networks:
             - app-network  # Connect to the custom network
-
 volumes:
     postgres_data:
 
